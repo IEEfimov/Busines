@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Busines
+namespace Busines.Forms
 {
-    public partial class Form1 : Form
+    public partial class AddClientForm : Form
     {
-        public Form1()
+        public AddClientForm()
         {
             InitializeComponent();
         }
+
+       
     }
 }
