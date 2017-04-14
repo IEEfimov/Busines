@@ -53,11 +53,46 @@
   <ItemGroup>
     <Compile Include="Classes\Client.cs" />
     <Compile Include="Classes\DataHelper.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Classes\Flaw.cs" />
+    <Compile Include="Classes\Prize.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\SaledProduct.cs" />
     <Compile Include="Forms\AddClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddClientForm.Designer.cs">
       <DependentUpon>AddClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddFlaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddFlaw.Designer.cs">
+      <DependentUpon>AddFlaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPrize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPrize.Designer.cs">
+      <DependentUpon>AddPrize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ClientsList.cs">
       <SubType>Form</SubType>
@@ -65,22 +100,91 @@
     <Compile Include="Forms\ClientsList.Designer.cs">
       <DependentUpon>ClientsList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\EmployeesList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\EmployeesList.Designer.cs">
+      <DependentUpon>EmployeesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FlawList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FlawList.Designer.cs">
+      <DependentUpon>FlawList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrizeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrizeList.Designer.cs">
+      <DependentUpon>PrizeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SaledProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SaledProductList.Designer.cs">
+      <DependentUpon>SaledProductList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddClientForm.resx">
       <DependentUpon>AddClientForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddFlaw.resx">
+      <DependentUpon>AddFlaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPrize.resx">
+      <DependentUpon>AddPrize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ClientsList.resx">
       <DependentUpon>ClientsList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EmployeesList.resx">
+      <DependentUpon>EmployeesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FlawList.resx">
+      <DependentUpon>FlawList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrizeList.resx">
+      <DependentUpon>PrizeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SaledProductList.resx">
+      <DependentUpon>SaledProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +194,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -103,6 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
